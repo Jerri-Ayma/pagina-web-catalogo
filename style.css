@@ -1,0 +1,12 @@
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    backdrop-filter: blur(10px); /* sirve para hacer el fondo borroso */
+    box-shadow: var(--shadow);
+    z-index: 100; /* sirve para que el header esté por encima de otros elementos */
+    transition: background-color var(--transition-normal), box-shadow var(--transition-normal); /* sirve para hacer una transición suave al cambiar el color de fondo y la sombra del header */
+    height: 55px; /* Sirve para establecer la altura del header */
+} 
