@@ -3,6 +3,7 @@
     --secondary-color: #2c5f7d; /* Color secundario del sitio web */
     --accent-color: #d4a574; /* Color de acento para botones y elementos destacados */
     --text-color:   #333333; /* Color del texto del sitio web */
+    --text-light: #666666; /* Color del texto secundario del sitio web */
 
     /* Fuentes */
     --font-display: 'Fraunces', serif; 
@@ -65,6 +66,26 @@ ul {
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     padding: 0 1.5rem; /* Sirve para agregar un poco de espacio a los lados del contenedor */
 }
+.section_header {
+    text-align: center;
+    margin-bottom: 3rem; /* Sirve para agregar un espacio debajo del encabezado de la sección */
+}
+.section_title {
+    font-family: var(--font-display);
+    font-size: var(--h2-size);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.section_subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+/* Header */
+
 .header {
     position: relative;
     top: 0;
@@ -194,6 +215,76 @@ ul {
     box-shadow: var(--shadow-lg)
 }
 
+/* catalogo */ 
+
+.catalogo {
+    padding-top: 3rem;
+    background-color: var(--bg-light);
+}
+.catalogo .container {
+    max-width: 100%; /* Establece un ancho máximo para el contenedor del catálogo */
+    padding: 0 1rem 1rem; /* Sirve para agregar un poco de espacio a los lados y debajo del contenedor del catálogo */
+}
+.catalogo__grid {
+    display: grid; /* Sirve para establecer un diseño de cuadrícula para los productos del catálogo */
+    grid-template-columns: repeat(4,1fr); /* Numero de columnas: 4, espacio entre columnas: 1rem */
+    gap: 1rem; /* Sirve para establecer un espacio entre los productos del catálogo */
+    margin: 0 auto; /* Sirve para centrar los productos del catálogo horizontalmente */
+}
+.product__card {
+    background-color: white;
+    overflow: hidden; /* Sirve para ocultar cualquier contenido que se desborde del contenedor de la tarjeta del producto */
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal); /* Sirve para hacer una transición suave al transformar y agregar sombra a la tarjeta del producto */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse por encima de la tarjeta del producto */    
+} 
+.product__card--animate { /* Sirve para animar la tarjeta del producto */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6 ease, transform 0.6s ease;
+}
+.product__card--visible { /* Sirve para hacer que la tarjeta del producto se muestre cuando se anima */
+    opacity: 1;
+    transform: translateY(0);
+}   
+.product__card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+.product__image {
+    width: 100%;
+    height: auto;
+    min-height: 480px;
+    overflow: hidden; /* Sirve para ocultar cualquier contenido que se desborde del contenedor de la imagen del producto */
+    position: relative;
+    background-color: var(--bg-light); 
+}
+.product__image img { /* sirve para establecer estilos para la imagen del producto */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sirve para cubrir toda el área de la imagen del producto sin distorsionar la imagen */
+    transition: transform var(--transition-normal); /* Sirve para hacer una transición suave al transformar la imagen del producto */
+}
+.product__card:hover .product__image img { /* Sirve para hacer una transición suave al transformar la imagen del producto al pasar el mouse por encima de la tarjeta del producto */
+    transform: scale(1.1);
+}
+.product__info{
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+}
+.product__name {
+    font-family: var(--font-display);
+    font-size: var(--h3-size);
+    font-weight: 600;   
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+.product__price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
 /* Animaciones */
 
 @keyframes fadeInUp {
