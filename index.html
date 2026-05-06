@@ -9,8 +9,12 @@
     <!-- Fuentes de Google Fonts -->    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- font-awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Encabezado con navegación -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -46,7 +50,7 @@
 
     <main id="main">
 
-        <!-- Hero Section Principal -->
+        <!-- Hero Principal -->
         <section class="hero" id="home"> <!-- class="hero" sirve para dar estilos a la sección principal y id="home" sirve para dar un identificador a la sección principal -->
             <img 
                 src="images/hero-background.jpg" 
@@ -130,7 +134,7 @@
             >
             <div class="hero__container container">
                 <div class="hero__content">
-                    <h1 class="hero__title">Temporada de verano</h1>
+                    <h2 class="hero__title">Temporada de verano</h2>
                     <p class="hero__description">Diseños únicos para cada estilo de vida.</p>
                     <a href="catalogo.html" class="hero__button">Descubre mas</a>
                 </div>
@@ -147,7 +151,7 @@
             >
             <div class="hero__container container">
                 <div class="hero__content">
-                    <h1 class="hero__title">Día de los Enamorados</h1>
+                    <h2 class="hero__title">Día de los Enamorados</h2>
                     <p class="hero__description">Diseños únicos para cada estilo de vida.</p>
                     <a href="catalogo.html" class="hero__button">Descubre mas</a>
                 </div>
@@ -189,10 +193,53 @@
                     </div>
             </div>
         </section>
-
     </main>
+
+    <!-- FOOTER - Pie de página -->
     <footer class="footer">
-        <p>&copy; 2026 Jervils. Todos los derechos reservados.</p>
+        <div class="container">
+           <div class="footer__content">
+
+                <!-- Columna 1 - Centro de Ayuda -->
+                <nav class="footer__section">
+                    <h2 class="footer__title">Centro de ayuda</h2>
+                    <ul class="footer__link">
+                        <li><a href="tiendas.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Columna 2 - Legal -->
+                <nav class="footer__section">
+                    <h2 class="footer__title">Legal</h2>
+                    <ul class="footer__link">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Columna 3 - Redes Sociales -->
+                <nav class="footer__section">
+                    <h2 class="footer__title">Sobre Jervils </h2>
+                    <ul class="footer__link">
+                        <li><a href="about.html">Quienes somos</a></li>
+                        <li><a href="Tiendas.html">Nuestras Tiendas</a></li>
+                    </ul>
+                </nav>
+           </div>
+
+           <!-- FOOTER BOTTOM -->
+            <div class="footer__bottom">
+                &copy; <time datetime="2026">2026</time> Jervils. Todos los derechos reservados.
+            </div>
+        </div>
     </footer>
+
+    <!-- Scroll to top button -->
+    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Volver al inicio">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 </body>
 </html>
