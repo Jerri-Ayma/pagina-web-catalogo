@@ -1,245 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jervils - Pantalones Jean de alta calidad">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jervils - Pantalones Jean de alta calidad"
+    />
     <title>Jervils - Pantalones Jean</title>
 
-    <!-- Fuentes de Google Fonts -->    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font-awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Encabezado con navegación -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <a href="#main" class="skip-link">Ir al contenido principal</a>
-    
+
     <!-- Encabezado con navegación -->
 
     <header class="header" id="header">
-        <nav class="nav container" aria-label="Navegación principal">
-            <div class="nav__logo">
-                <a href="#home">Jervils</a>
-            </div>
-            <div class="nav__menu" id="nav-menu"> 
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Inicio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="catalogo.html" class="nav__link">Catálogo</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="tiendas.html" class="nav__link">Tiendas</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contacto.html" class="nav__link">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="nav container" aria-label="Navegación principal">
+        <div class="nav__logo">
+          <a href="#home">Jervils</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="catalogo.html" class="nav__link">Catálogo</a>
+            </li>
+            <li class="nav__item">
+              <a href="tiendas.html" class="nav__link">Tiendas</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacto.html" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- Contenido principal -->
 
     <main id="main">
+      <!-- Hero Principal -->
+      <section class="hero" id="home">
+        <!-- class="hero" sirve para dar estilos a la sección principal y id="home" sirve para dar un identificador a la sección principal -->
+        <img
+          src="images/hero-background.jpg"
+          alt="Jeans Jervils - Colección de alta calidad"
+          class="hero__image"
+          loading="eager"
+        />
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">Estilo que se adapta a ti</h1>
+            <p class="hero__description">
+              Descubre nuestra colección de pantalones jean diseñados para cada
+              momento de tu vida.
+            </p>
+            <a href="catalogo.html" class="hero__button">Ver colección</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Hero Principal -->
-        <section class="hero" id="home"> <!-- class="hero" sirve para dar estilos a la sección principal y id="home" sirve para dar un identificador a la sección principal -->
-            <img 
-                src="images/hero-background.jpg" 
-                alt="Jeans Jervils - Colección de alta calidad"
-                class="hero__image"
-                loading="eager"
-            >
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Estilo que se adapta a ti</h1>
-                    <p class="hero__description">Descubre nuestra colección de pantalones jean diseñados para cada momento de tu vida.</p>
-                    <a href="catalogo.html" class="hero__button">Ver colección</a>
-                </div>
+      <!-- Sección de Catálogo -->
+      <section id="catalogo" class="catalogo">
+        <div class="container">
+          <div class="section_header">
+            <h2 class="section_title">Nuestra colección</h2>
+            <!-- class="catalogo" y class="container" estaran dentro de la clase "container" -->
+            <p class="section_subtitle">Encuentra el Jean perfecto para ti</p>
+          </div>
+
+          <div class="catalogo__grid">
+            <!-- Aquí se agregarán los productos dinámicamente -->
+            <article class="product__card">
+              <div class="product__image">
+                <img
+                  src="images/modelo_1.jpg"
+                  alt="Producto 1"
+                  class="product__image"
+                />
+              </div>
+              <div class="product__info">
+                <h3 class="product__name">Pantalón Jean 1</h3>
+                <p class="product__price"><data value="59.99">$59.99</data></p>
+                <!-- es mejor usar data ya que servira para usar js -->
+              </div>
+            </article>
+
+            <article class="product__card">
+              <div class="product__image">
+                <img
+                  src="images/modelo_2.jpg"
+                  alt="Producto 2"
+                  class="product__image"
+                />
+              </div>
+              <div class="product__info">
+                <h3 class="product__name">Pantalón Jean 2</h3>
+                <p class="product__price"><data value="59.99">$59.99</data></p>
+              </div>
+            </article>
+
+            <article class="product__card">
+              <div class="product__image">
+                <img
+                  src="images/modelo_3.jpg"
+                  alt="Producto 3"
+                  class="product__image"
+                />
+              </div>
+              <div class="product__info">
+                <h3 class="product__name">Pantalón Jean 3</h3>
+                <p class="product__price"><data value="59.99">$59.99</data></p>
+              </div>
+            </article>
+
+            <article class="product__card">
+              <div class="product__image">
+                <img
+                  src="images/modelo_4.jpg"
+                  alt="Producto 4"
+                  class="product__image"
+                />
+              </div>
+              <div class="product__info">
+                <h3 class="product__name">Pantalón Jean 4</h3>
+                <p class="product__price"><data value="59.99">$59.99</data></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Heros -->
+
+      <!-- Primer Hero -->
+      <section class="hero hero-2" id="hero-2">
+        <img
+          src="images/summer_sale-background.jpg"
+          alt="Promoción de estación - Jeans Jervils"
+          class="hero__image"
+          loading="lazy"
+        />
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h2 class="hero__title">Temporada de verano</h2>
+            <p class="hero__description">
+              Diseños únicos para cada estilo de vida.
+            </p>
+            <a href="catalogo.html" class="hero__button">Descubre mas</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Segundo Hero -->
+      <section class="hero hero-3" id="hero-3">
+        <img
+          src="images/valentines_day-background.jpg"
+          alt="Promoción de Dia Festivo - Jeans Jervils"
+          class="hero__image"
+          loading="lazy"
+        />
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h2 class="hero__title">Día de los Enamorados</h2>
+            <p class="hero__description">
+              Diseños únicos para cada estilo de vida.
+            </p>
+            <a href="catalogo.html" class="hero__button">Descubre mas</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de 3 columnas -->
+      <section class="hero-columns" id="hero-columns">
+        <div class="hero-columns__container">
+          <!-- Columna 1: Tiendas -->
+          <div class="hero-columns__item">
+            <img
+              src="images/tiendas.jpg"
+              alt="Nuestras Tiendas Jervils"
+              class="hero-columns__bg"
+            />
+            <div class="hero-columns__overlay"></div>
+            <div class="hero-columns__content">
+              <h2 class="hero-columns__title">Tiendas</h2>
+              <a href="stores.html" class="hero-columns__button"
+                >Visita nuestras tiendas</a
+              >
             </div>
-        </section>
+          </div>
 
-        <!-- Sección de Catálogo -->
-        <section id="catalogo" class="catalogo">
-            <div class="container">
-                <div class="section_header" >   
-                    <h2 class="section_title">Nuestra colección</h2> <!-- class="catalogo" y class="container" estaran dentro de la clase "container" -->
-                    <p class="section_subtitle">Encuentra el Jean perfecto para ti</p>
-                </div>
-                
-                <div class="catalogo__grid">
-                    <!-- Aquí se agregarán los productos dinámicamente -->
-                     <article class="product__card">
-                        <div class="product__image">
-                            <img src="images/modelo_1.jpg" alt="Producto 1" class="product__image">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Pantalón Jean 1</h3>
-                            <p class="product__price"><data value="59.99">$59.99</data></p> <!-- es mejor usar data ya que servira para usar js -->  
-                        </div>
-                    </article> 
-
-                    <article class="product__card">
-                        <div class="product__image">
-                            <img src="images/modelo_2.jpg" alt="Producto 2" class="product__image">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Pantalón Jean 2</h3>
-                            <p class="product__price"><data value="59.99">$59.99</data></p>
-                        </div>
-                    </article>
-
-                    <article class="product__card">
-                        <div class="product__image">
-                            <img src="images/modelo_3.jpg" alt="Producto 3" class="product__image">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Pantalón Jean 3</h3>
-                            <p class="product__price"><data value="59.99">$59.99</data></p>
-                        </div>
-                    </article>
-
-                    <article class="product__card">
-                        <div class="product__image">
-                            <img src="images/modelo_4.jpg" alt="Producto 4" class="product__image">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Pantalón Jean 4</h3>
-                            <p class="product__price"><data value="59.99">$59.99</data></p>
-                        </div>
-                    </article>
-                </div>
-
-
+          <!-- Columna 2: Quienes Somos -->
+          <div class="hero-columns__item">
+            <img
+              src="images/quienes_somos.jpg"
+              alt="Quienes Somos Jervils"
+              class="hero-columns__bg"
+            />
+            <div class="hero-columns__overlay"></div>
+            <div class="hero-columns__content">
+              <h2 class="hero-columns__title">Quienes Somos</h2>
+              <a href="about.html" class="hero-columns__button">Conocenos</a>
             </div>
-        </section>
+          </div>
 
-        <!-- Sección Heros -->
-
-        <!-- Primer Hero -->
-        <section class= "hero hero-2" id="hero-2">
-            <img 
-                src="images/summer_sale-background.jpg" 
-                alt="Promoción de estación - Jeans Jervils"
-                class="hero__image"
-                loading="lazy"
-            >
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h2 class="hero__title">Temporada de verano</h2>
-                    <p class="hero__description">Diseños únicos para cada estilo de vida.</p>
-                    <a href="catalogo.html" class="hero__button">Descubre mas</a>
-                </div>
+          <!-- Columna 3: Pronto más modelos -->
+          <div class="hero-columns__item">
+            <img
+              src="images/pronto_modelos.jpg"
+              alt=" Pronto más modelos Jervils"
+              class="hero-columns__bg"
+            />
+            <div class="hero-columns__overlay"></div>
+            <div class="hero-columns__content">
+              <h2 class="hero-columns__title">Pronto más modelos</h2>
+              <a href="catalogo.html" class="hero-columns__button"
+                >Descubre más</a
+              >
             </div>
-        </section>  
-
-        <!-- Segundo Hero -->
-        <section class= "hero hero-3" id="hero-3">
-            <img 
-                src="images/valentines_day-background.jpg" 
-                alt="Promoción de Dia Festivo - Jeans Jervils"
-                class="hero__image"
-                loading="lazy"
-            >
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h2 class="hero__title">Día de los Enamorados</h2>
-                    <p class="hero__description">Diseños únicos para cada estilo de vida.</p>
-                    <a href="catalogo.html" class="hero__button">Descubre mas</a>
-                </div>
-            </div>
-        </section>  
-
-         <!-- Sección de 3 columnas -->
-        <section class="hero-columns" id="hero-columns">
-            <div class="hero-columns__container">
-
-                    <!-- Columna 1: Tiendas -->
-                    <div class="hero-columns__item">
-                        <img src="images/tiendas.jpg" alt="Nuestras Tiendas Jervils" class="hero-columns__bg">
-                        <div class="hero-columns__overlay"></div>
-                        <div class="hero-columns__content">
-                            <h2 class="hero-columns__title">Tiendas</h2>
-                            <a href="stores.html" class="hero-columns__button">Visita nuestras tiendas</a>
-                        </div>
-                    </div>
-
-                    <!-- Columna 2: Quienes Somos -->
-                    <div class="hero-columns__item">
-                        <img src="images/quienes_somos.jpg" alt="Quienes Somos Jervils" class="hero-columns__bg">
-                        <div class="hero-columns__overlay"></div>
-                        <div class="hero-columns__content">
-                            <h2 class="hero-columns__title">Quienes Somos</h2>
-                            <a href="about.html" class="hero-columns__button">Conocenos</a>
-                        </div>
-                    </div>
-
-                    <!-- Columna 3: Pronto más modelos -->
-                    <div class="hero-columns__item">
-                        <img src="images/pronto_modelos.jpg" alt=" Pronto más modelos Jervils" class="hero-columns__bg">
-                        <div class="hero-columns__overlay"></div>
-                        <div class="hero-columns__content">
-                            <h2 class="hero-columns__title">Pronto más modelos</h2  >
-                            <a href="catalogo.html" class="hero-columns__button">Descubre más</a>
-                        </div>
-                    </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER - Pie de página -->
     <footer class="footer">
-        <div class="container">
-           <div class="footer__content">
+      <div class="container">
+        <div class="footer__content">
+          <!-- Columna 1 - Centro de Ayuda -->
+          <nav class="footer__section">
+            <h2 class="footer__title">Centro de ayuda</h2>
+            <ul class="footer__link">
+              <li><a href="tiendas.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </nav>
 
-                <!-- Columna 1 - Centro de Ayuda -->
-                <nav class="footer__section">
-                    <h2 class="footer__title">Centro de ayuda</h2>
-                    <ul class="footer__link">
-                        <li><a href="tiendas.html">Preguntas Frecuentes</a></li>
-                    </ul>
-                </nav>
+          <!-- Columna 2 - Legal -->
+          <nav class="footer__section">
+            <h2 class="footer__title">Legal</h2>
+            <ul class="footer__link">
+              <li><a href="#">Términos y Condiciones</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+          </nav>
 
-                <!-- Columna 2 - Legal -->
-                <nav class="footer__section">
-                    <h2 class="footer__title">Legal</h2>
-                    <ul class="footer__link">
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Columna 3 - Redes Sociales -->
-                <nav class="footer__section">
-                    <h2 class="footer__title">Sobre Jervils </h2>
-                    <ul class="footer__link">
-                        <li><a href="about.html">Quienes somos</a></li>
-                        <li><a href="Tiendas.html">Nuestras Tiendas</a></li>
-                    </ul>
-                </nav>
-           </div>
-
-           <!-- FOOTER BOTTOM -->
-            <div class="footer__bottom">
-                &copy; <time datetime="2026">2026</time> Jervils. Todos los derechos reservados.
-            </div>
+          <!-- Columna 3 - Redes Sociales -->
+          <nav class="footer__section">
+            <h2 class="footer__title">Sobre Jervils</h2>
+            <ul class="footer__link">
+              <li><a href="about.html">Quienes somos</a></li>
+              <li><a href="Tiendas.html">Nuestras Tiendas</a></li>
+            </ul>
+          </nav>
         </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer__bottom">
+          &copy; <time datetime="2026">2026</time> Jervils. Todos los derechos
+          reservados.
+        </div>
+      </div>
     </footer>
 
     <!-- Scroll to top button -->
-    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Volver al inicio">
-        <i class="fas fa-arrow-up"></i>
+    <a
+      href="#home"
+      class="scroll-top"
+      id="scroll-top"
+      aria-label="Volver al inicio"
+    >
+      <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- JavaScript -->
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
