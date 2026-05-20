@@ -17,6 +17,12 @@
       rel="stylesheet"
     />
 
+    <!-- font-awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -48,5 +54,123 @@
         </div>
       </nav>
     </header>
+
+    <main class="main" id="main">
+      <!-- Hero Section -->
+
+      <section class="hero" id="hero">
+        <img
+          src="images/Nuestra_tienda.jpg"
+          alt="Tienda Jervils en Gamarra - Visitanos y descubre nuestra colección"
+          class="hero__image"
+          loading="eager"
+        />
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">Nuestras Tiendas</h1>
+            <p class="hero__description">
+              Visitanos y descubre mas de cerca toda nuestra colección
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Tiendas -->
+      <section class="stores-new" id="tiendas">
+        <div class="container--two-columns">
+          <!-- Título fuera del grid -->
+          <h2 class="stores-new__title">Nuestras Tiendas</h2>
+
+          <!-- Grid de 2 columnas -->
+          <div class="stores-new__grid">
+            <!-- Columna izquierda: imagen de fondo + info tienda -->
+            <div class="stores-new__left">
+              <img
+                src="images/tienda_dibujo.png"
+                alt="Fachada de la tienda Jervils en Gamarra, Lima"
+                class="stores-new__image"
+              />
+              <div class="store-info">
+                <div class="store-info__header">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3 class="store-info__title">Perú</h3>
+                </div>
+                <h4 class="store-info__label">Gamarra</h4>
+                <address class="store-info__address">
+                  Galeria Golden Plaza Horizonte - Tiendas 343 y 324<br />
+                  La Victoria, Lima<br />
+                  Lunes a Sábado: 9:00 AM - 7:00 PM<br />
+                </address>
+              </div>
+            </div>
+
+            <!-- Columna derecha: mapa -->
+            <div class="store-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249914.59577698178!2d-77.17584615!3d-12.046373949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c89f5e02a43f%3A0x813ea83317ffb7dd!2sGolden%20Plaza%20Horizonte!5e0!3m2!1ses-419!2spe!4v1771527835995!5m2!1ses-419!2spe"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Jervils en Lima, Perú"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER - Pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <!-- Columna 1 - Centro de Ayuda -->
+          <nav class="footer__section">
+            <h2 class="footer__title">Centro de ayuda</h2>
+            <ul class="footer__link">
+              <li><a href="tiendas.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </nav>
+
+          <!-- Columna 2 - Legal -->
+          <nav class="footer__section">
+            <h2 class="footer__title">Legal</h2>
+            <ul class="footer__link">
+              <li><a href="#">Términos y Condiciones</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+          </nav>
+
+          <!-- Columna 3 - Redes Sociales -->
+          <nav class="footer__section">
+            <h2 class="footer__title">Sobre Jervils</h2>
+            <ul class="footer__link">
+              <li><a href="about.html">Quienes somos</a></li>
+              <li><a href="Tiendas.html">Nuestras Tiendas</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer__bottom">
+          &copy; <time datetime="2026">2026</time> Jervils. Todos los derechos
+          reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <a
+      href="#home"
+      class="scroll-top"
+      id="scroll-top"
+      aria-label="Volver al inicio"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
   </body>
 </html>

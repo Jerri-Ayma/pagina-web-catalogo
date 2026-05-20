@@ -1,13 +1,21 @@
 /* Variables CSS */
 :root {
-  --primary-color: #1a1a1a; /* Color principal del sitio web */
-  --secondary-color: #2c5f7d; /* Color secundario del sitio web */
-  --accent-color: #d4a574; /* Color de acento para botones y elementos destacados */
-  --text-color: #333333; /* Color del texto del sitio web */
-  --text-light: #666666; /* Color del texto secundario del sitio web */
-  --bg-color: #ffffff; /* Color de fondo del sitio web */
-  --bg-light: #f8f8f8; /* Color de fondo claro para secciones del sitio web */
-  --border-color: #e0e0e0; /* Color de borde para elementos del sitio web */
+  --primary-color: #1a1a1a;
+  /* Color principal del sitio web */
+  --secondary-color: #2c5f7d;
+  /* Color secundario del sitio web */
+  --accent-color: #d4a574;
+  /* Color de acento para botones y elementos destacados */
+  --text-color: #333333;
+  /* Color del texto del sitio web */
+  --text-light: #666666;
+  /* Color del texto secundario del sitio web */
+  --bg-color: #ffffff;
+  /* Color de fondo del sitio web */
+  --bg-light: #f8f8f8;
+  /* Color de fondo claro para secciones del sitio web */
+  --border-color: #e0e0e0;
+  /* Color de borde para elementos del sitio web */
 
   /* Fuentes */
   --font-display: "Fraunces", serif;
@@ -31,29 +39,36 @@
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.15);
 
   /* Transiciones */
-  --transition-normal: 300ms ease; /* Transición suave */
+  --transition-normal: 300ms ease;
+  /* Transición suave */
 }
 
 * {
   /* Sirve para establecer estilos globales para todos los elementos del sitio web */
-  box-sizing: border-box; /* Sirve para incluir el padding y el borde en el tamaño total de los elementos */
-  margin: 0; /* Elimina el margen predeterminado de los elementos */
-  padding: 0; /* Elimina el padding predeterminado de los elementos */
+  box-sizing: border-box;
+  /* Sirve para incluir el padding y el borde en el tamaño total de los elementos */
+  margin: 0;
+  /* Elimina el margen predeterminado de los elementos */
+  padding: 0;
+  /* Elimina el padding predeterminado de los elementos */
 }
+
 html {
   /* Sirve para establecer estilos para el elemento raíz del sitio web */
-  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en los enlaces */
+  scroll-behavior: smooth;
+  /* Desplazamiento suave al hacer clic en los enlaces */
 }
 
 body {
   /* Sirve para establecer estilos para el cuerpo del sitio web */
   font-family: var(--font-body);
   font-size: var(--normal-size);
-  color: var(--text-color); /* Color del texto del sitio web */
-  background-color: var(
-    --bg-color
-  ); /* Establece un fondo claro para el sitio web */
-  line-height: 1.6; /* Sirve para mejorar la legibilidad del texto al aumentar el espacio entre líneas */
+  color: var(--text-color);
+  /* Color del texto del sitio web */
+  background-color: var(--bg-color);
+  /* Establece un fondo claro para el sitio web */
+  line-height: 1.6;
+  /* Sirve para mejorar la legibilidad del texto al aumentar el espacio entre líneas */
 }
 
 h1,
@@ -66,43 +81,61 @@ h6 {
   font-weight: 600;
   font-variation-settings:
     "SOFT" 0,
-    /* Sirve para establecer la suavidad de las fuentes variables */ "WONK" 0; /* Sirve para establecer la irregularidad de las fuentes variables */
+    /* Sirve para establecer la suavidad de las fuentes variables */
+    "WONK" 0;
+  /* Sirve para establecer la irregularidad de las fuentes variables */
 }
 
 a {
   /* Establece estilos para los enlaces del sitio web */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: inherit; /* Sirve para heredar el color del texto del elemento padre */
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+  color: inherit;
+  /* Sirve para heredar el color del texto del elemento padre */
 }
+
 img {
-  display: block; /* Elimina el espacio debajo de las imágenes al establecer su visualización como bloque */
-  max-width: 100%; /* Sirve para hacer que las imágenes sean responsivas al limitar su ancho máximo al 100% del contenedor padre */
-  height: auto; /* Sirve para mantener la proporción de las imágenes al ajustar su altura automáticamente en función de su ancho */
+  display: block;
+  /* Elimina el espacio debajo de las imágenes al establecer su visualización como bloque */
+  max-width: 100%;
+  /* Sirve para hacer que las imágenes sean responsivas al limitar su ancho máximo al 100% del contenedor padre */
+  height: auto;
+  /* Sirve para mantener la proporción de las imágenes al ajustar su altura automáticamente en función de su ancho */
 }
+
 ul {
-  list-style: none; /* Elimina los puntos de las listas del .nav */
+  list-style: none;
+  /* Elimina los puntos de las listas del .nav */
 }
+
 .container {
-  max-width: 1200px; /* Establece un ancho máximo para el contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  padding: 0 1.5rem; /* Sirve para agregar un poco de espacio a los lados del contenedor */
+  max-width: 1200px;
+  /* Establece un ancho máximo para el contenedor */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
+  padding: 0 1.5rem;
+  /* Sirve para agregar un poco de espacio a los lados del contenedor */
 }
 
 .skip-link {
   position: absolute;
-  top: -100px; /* Posiciona el enlace de salto fuera de la vista */
+  top: -100px;
+  /* Posiciona el enlace de salto fuera de la vista */
   left: 0;
-  z-index: 1000; /* Asegura que el enlace de salto esté por encima de otros elementos */
+  z-index: 1000;
+  /* Asegura que el enlace de salto esté por encima de otros elementos */
   padding: 0.75rem 1.5rem;
   background-color: var(--primary-color);
   color: var(--bg-color);
   font-weight: 600;
   text-decoration: none;
 }
+
 .skip-link:focus {
   /* Cuando el enlace recibe foco, se muestra en la parte superior de la página */
   top: 0;
 }
+
 .visually-hidden {
   /* Se usa para textos que los lectores de pantalla necesitan pero que visualmente no deben mostrarse (como títulos ocultos). */
   position: absolute;
@@ -115,10 +148,13 @@ ul {
   white-space: nowrap;
   border: 0;
 }
+
 .section_header {
   text-align: center;
-  margin-bottom: 3rem; /* Sirve para agregar un espacio debajo del encabezado de la sección */
+  margin-bottom: 3rem;
+  /* Sirve para agregar un espacio debajo del encabezado de la sección */
 }
+
 .section_title {
   font-family: var(--font-display);
   font-size: var(--h2-size);
@@ -127,6 +163,7 @@ ul {
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
+
 .section_subtitle {
   font-size: 1.1rem;
   color: var(--text-light);
@@ -138,26 +175,36 @@ ul {
 .header {
   position: relative;
   width: 100%;
-  background-color: rgba(
-    225,
-    225,
-    225,
-    0.8
-  ); /* Fondo del header semitransparente */
-  backdrop-filter: blur(10px); /* Fondo borroso */
-  box-shadow: var(--shadow-sm); /* Sombra para dar profundidad al header */
-  z-index: 100; /* Header por encima de otros elementos */
+  background-color: rgba(225,
+      225,
+      225,
+      0.8);
+  /* Fondo del header semitransparente */
+  backdrop-filter: blur(10px);
+  /* Fondo borroso */
+  box-shadow: var(--shadow-sm);
+  /* Sombra para dar profundidad al header */
+  z-index: 100;
+  /* Header por encima de otros elementos */
   transition:
     background-color var(--transition-normal),
-    box-shadow var(--transition-normal); /* sirve para hacer una transición suave al cambiar el color de fondo y la sombra del header */
-  height: 55px; /* Altura del header */
+    box-shadow var(--transition-normal);
+  /* sirve para hacer una transición suave al cambiar el color de fondo y la sombra del header */
+  height: 55px;
+  /* Altura del header */
 }
+
 .nav {
-  height: 55px; /* Altura de la barra de navegación */
-  display: grid; /* Sirve para establecer un diseño de cuadrícula para la barra de navegación */
-  grid-template-columns: 1fr auto 1fr; /* Sirve para establecer las columnas de la barra de navegación */
-  align-items: center; /* Sirve para alinear los elementos de la barra de navegación verticalmente */
+  height: 55px;
+  /* Altura de la barra de navegación */
+  display: grid;
+  /* Sirve para establecer un diseño de cuadrícula para la barra de navegación */
+  grid-template-columns: 1fr auto 1fr;
+  /* Sirve para establecer las columnas de la barra de navegación */
+  align-items: center;
+  /* Sirve para alinear los elementos de la barra de navegación verticalmente */
 }
+
 .nav__logo a {
   font-family: var(--font-display);
   font-size: 1.5rem;
@@ -166,30 +213,44 @@ ul {
   letter-spacing: 2px;
   transition: color var(--transition-normal);
 }
+
 .nav__logo a:hover {
   /* Cambia el color del logo al pasar el mouse por encima */
   color: var(--secondary-color);
 }
+
 .nav__list {
-  display: flex; /* flex sirve para centrar los elementos de la lista de navegación horizontalmente */
-  gap: 2.5rem; /* Sirve para establecer un espacio entre los elementos de la lista de navegación */
-  align-items: center; /* Sirve para alinear los elementos de la lista de navegación verticalmente */
-  justify-content: center; /* Sirve para centrar los elementos de la lista de navegación horizontalmente */
+  display: flex;
+  /* flex sirve para centrar los elementos de la lista de navegación horizontalmente */
+  gap: 2.5rem;
+  /* Sirve para establecer un espacio entre los elementos de la lista de navegación */
+  align-items: center;
+  /* Sirve para alinear los elementos de la lista de navegación verticalmente */
+  justify-content: center;
+  /* Sirve para centrar los elementos de la lista de navegación horizontalmente */
 }
+
 .nav__link {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--text-color);
-  text-transform: none; /* Evita que los enlaces de navegación se transformen a mayúsculas o minúsculas */
-  letter-spacing: 0; /* Elimina el espacio entre letras de los enlaces de navegación */
-  transition: color var(--transition-normal); /* Sirve para hacer una transición suave al cambiar el color de los enlaces de navegación */
-  position: relative; /* Sirve para posicionar los enlaces de navegación de forma relativa, lo que permite que el efecto de subrayado se posicione correctamente */
+  text-transform: none;
+  /* Evita que los enlaces de navegación se transformen a mayúsculas o minúsculas */
+  letter-spacing: 0;
+  /* Elimina el espacio entre letras de los enlaces de navegación */
+  transition: color var(--transition-normal);
+  /* Sirve para hacer una transición suave al cambiar el color de los enlaces de navegación */
+  position: relative;
+  /* Sirve para posicionar los enlaces de navegación de forma relativa, lo que permite que el efecto de subrayado se posicione correctamente */
 }
+
 .nav__link::after {
   /* Sirve para agregar un efecto de subrayado a los enlaces de navegación */
-  content: ""; /* Agregar un contenido vacío después de cada enlace de navegación para que se muestre el efecto de subrayado */
-  position: absolute; /* Posiciona el efecto de subrayado debajo de cada enlace de navegación */
+  content: "";
+  /* Agregar un contenido vacío después de cada enlace de navegación para que se muestre el efecto de subrayado */
+  position: absolute;
+  /* Posiciona el efecto de subrayado debajo de cada enlace de navegación */
   bottom: -5px;
   left: 0;
   width: 0;
@@ -197,12 +258,15 @@ ul {
   background-color: var(--secondary-color);
   transition: width var(--transition-normal);
 }
+
 .nav__link:hover {
   /* Cambia el color de los enlaces de navegación al pasar el mouse por encima */
   color: var(--secondary-color);
 }
+
 .nav__link:hover::after {
-  width: 100%; /* Expande el efecto de subrayado al 100% del ancho del enlace de navegación */
+  width: 100%;
+  /* Expande el efecto de subrayado al 100% del ancho del enlace de navegación */
 }
 
 /* Hero */
@@ -222,12 +286,14 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Sirve para cubrir toda el área del hero sin distorsionar la imagen */
+  object-fit: cover;
+  /* Sirve para cubrir toda el área del hero sin distorsionar la imagen */
 }
 
 .hero__container {
   position: relative;
-  z-index: 2; /* Sirve para colocar el contenido del hero por encima de la imagen de fondo */
+  z-index: 2;
+  /* Sirve para colocar el contenido del hero por encima de la imagen de fondo */
 }
 
 .hero__content {
@@ -237,6 +303,7 @@ ul {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .hero__title {
   font-family: var(--font-display);
   font-size: var(--h1-size);
@@ -244,14 +311,17 @@ ul {
   margin-bottom: 1.5rem;
   line-height: 1.2;
   letter-spacing: 2px;
-  animation: fadeInUp 0.8s ease; /* Sirve para agregar una animación de desvanecimiento y movimiento hacia arriba al título del hero */
+  animation: fadeInUp 0.8s ease;
+  /* Sirve para agregar una animación de desvanecimiento y movimiento hacia arriba al título del hero */
 }
+
 .hero__description {
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
   line-height: 1.8;
   font-weight: 300;
-  animation: fadeInUp 0.8s ease 0.2s both; /* Sirve para agregar una animación de desvanecimiento y movimiento hacia arriba al texto descriptivo del hero con un retraso de 0.2 segundos */
+  animation: fadeInUp 0.8s ease 0.2s both;
+  /* Sirve para agregar una animación de desvanecimiento y movimiento hacia arriba al texto descriptivo del hero con un retraso de 0.2 segundos */
 }
 
 .hero__button {
@@ -261,22 +331,23 @@ ul {
   color: var(--primary-color);
   border-radius: var(--radius-full);
   font-weight: 600;
-  text-transform: uppercase; /* Sirve para transformar el texto del botón del hero a mayúsculas */
+  text-transform: uppercase;
+  /* Sirve para transformar el texto del botón del hero a mayúsculas */
   letter-spacing: 1px;
   transition:
     background-color var(--transition-normal),
     color var(--transition-normal),
     transform var(--transition-normal),
     box-shadow var(--transition-normal);
-  animation: fadeInUp 0.8s ease 0.4s both; /* Sirve para agregar una animación de desvanecimiento y movimiento hacia arriba al botón del hero con un retraso de 0.4 segundos */
+  animation: fadeInUp 0.8s ease 0.4s both;
+  /* Sirve para agregar una animación de desvanecimiento y movimiento hacia arriba al botón del hero con un retraso de 0.4 segundos */
 }
 
 .hero__button:hover {
   background-color: var(--accent-color);
   color: white;
-  transform: translateY(
-    -3px
-  ); /* Sirve para mover el botón del hero hacia arriba al pasar el mouse por encima */
+  transform: translateY(-3px);
+  /* Sirve para mover el botón del hero hacia arriba al pasar el mouse por encima */
   box-shadow: var(--shadow-lg);
 }
 
@@ -286,28 +357,39 @@ ul {
   padding-top: 3rem;
   background-color: var(--bg-light);
 }
+
 .catalogo .container {
-  max-width: 100%; /* Establece un ancho máximo para el contenedor del catálogo */
-  padding: 0 1rem 1rem; /* Sirve para agregar un poco de espacio a los lados y debajo del contenedor del catálogo */
+  max-width: 100%;
+  /* Establece un ancho máximo para el contenedor del catálogo */
+  padding: 0 1rem 1rem;
+  /* Sirve para agregar un poco de espacio a los lados y debajo del contenedor del catálogo */
 }
+
 .catalogo__grid {
-  display: grid; /* Sirve para establecer un diseño de cuadrícula para los productos del catálogo */
-  grid-template-columns: repeat(
-    4,
-    1fr
-  ); /* Numero de columnas: 4, espacio entre columnas: 1rem */
-  gap: 1rem; /* Sirve para establecer un espacio entre los productos del catálogo */
-  margin: 0 auto; /* Sirve para centrar los productos del catálogo horizontalmente */
+  display: grid;
+  /* Sirve para establecer un diseño de cuadrícula para los productos del catálogo */
+  grid-template-columns: repeat(4,
+      1fr);
+  /* Numero de columnas: 4, espacio entre columnas: 1rem */
+  gap: 1rem;
+  /* Sirve para establecer un espacio entre los productos del catálogo */
+  margin: 0 auto;
+  /* Sirve para centrar los productos del catálogo horizontalmente */
 }
+
 .product__card {
   background-color: white;
-  overflow: hidden; /* Sirve para ocultar cualquier contenido que se desborde del contenedor de la tarjeta del producto */
+  overflow: hidden;
+  /* Sirve para ocultar cualquier contenido que se desborde del contenedor de la tarjeta del producto */
   border-radius: var(--radius-md);
   transition:
     transform var(--transition-normal),
-    box-shadow var(--transition-normal); /* Sirve para hacer una transición suave al transformar y agregar sombra a la tarjeta del producto */
-  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse por encima de la tarjeta del producto */
+    box-shadow var(--transition-normal);
+  /* Sirve para hacer una transición suave al transformar y agregar sombra a la tarjeta del producto */
+  cursor: pointer;
+  /* Cambia el cursor a un puntero al pasar el mouse por encima de la tarjeta del producto */
 }
+
 .product__card--animate {
   /* Sirve para animar la tarjeta del producto */
   opacity: 0;
@@ -316,39 +398,49 @@ ul {
     opacity 0.6 ease,
     transform 0.6s ease;
 }
+
 .product__card--visible {
   /* Sirve para hacer que la tarjeta del producto se muestre cuando se anima */
   opacity: 1;
   transform: translateY(0);
 }
+
 .product__card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-lg);
 }
+
 .product__image {
   width: 100%;
   height: auto;
   min-height: 480px;
-  overflow: hidden; /* Sirve para ocultar cualquier contenido que se desborde del contenedor de la imagen del producto */
+  overflow: hidden;
+  /* Sirve para ocultar cualquier contenido que se desborde del contenedor de la imagen del producto */
   position: relative;
   background-color: var(--bg-light);
 }
+
 .product__image img {
   /* sirve para establecer estilos para la imagen del producto */
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Sirve para cubrir toda el área de la imagen del producto sin distorsionar la imagen */
-  transition: transform var(--transition-normal); /* Sirve para hacer una transición suave al transformar la imagen del producto */
+  object-fit: cover;
+  /* Sirve para cubrir toda el área de la imagen del producto sin distorsionar la imagen */
+  transition: transform var(--transition-normal);
+  /* Sirve para hacer una transición suave al transformar la imagen del producto */
 }
+
 .product__card:hover .product__image img {
   /* Sirve para hacer una transición suave al transformar la imagen del producto al pasar el mouse por encima de la tarjeta del producto */
   transform: scale(1.1);
 }
+
 .product__info {
   padding: 1rem;
   text-align: center;
   background-color: white;
 }
+
 .product__name {
   font-family: var(--font-display);
   font-size: var(--h3-size);
@@ -356,6 +448,7 @@ ul {
   margin-bottom: 0.5rem;
   color: var(--primary-color);
 }
+
 .product__price {
   font-size: 1.1rem;
   font-weight: 600;
@@ -367,31 +460,41 @@ ul {
   padding: 3rem 0;
   background-color: var(--bg-light);
 }
+
 .hero-columns__container {
-  display: grid; /* Sirve para establecer un diseño de cuadrícula para las columnas del hero */
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Numero de columnas: 3, espacio entre columnas: 1rem */
-  gap: 1rem; /* Sirve para establecer un espacio entre las columnas del hero */
+  display: grid;
+  /* Sirve para establecer un diseño de cuadrícula para las columnas del hero */
+  grid-template-columns: repeat(3,
+      1fr);
+  /* Numero de columnas: 3, espacio entre columnas: 1rem */
+  gap: 1rem;
+  /* Sirve para establecer un espacio entre las columnas del hero */
   max-width: 100%;
-  padding: 0 1rem; /* Sirve para agregar un poco de espacio a los lados del contenedor de las columnas del hero */
-  margin: auto; /* Sirve para centrar el contenedor de las columnas del hero horizontalmente */
+  padding: 0 1rem;
+  /* Sirve para agregar un poco de espacio a los lados del contenedor de las columnas del hero */
+  margin: auto;
+  /* Sirve para centrar el contenedor de las columnas del hero horizontalmente */
 }
+
 .hero-columns__item {
   /* Sirve para establecer estilos para cada columna del hero */
-  position: relative; /* Sirve para posicionar el contenido de cada columna del hero de forma relativa, lo que permite que el efecto de superposición se posicione correctamente */
+  position: relative;
+  /* Sirve para posicionar el contenido de cada columna del hero de forma relativa, lo que permite que el efecto de superposición se posicione correctamente */
   height: 500px;
-  overflow: hidden; /* Sirve para ocultar cualquier contenido que se desborde del contenedor de cada columna del hero */
-  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse por encima de cada columna del hero */
+  overflow: hidden;
+  /* Sirve para ocultar cualquier contenido que se desborde del contenedor de cada columna del hero */
+  cursor: pointer;
+  /* Cambia el cursor a un puntero al pasar el mouse por encima de cada columna del hero */
   transition:
     transform var(--transition-normal),
     box-shadow var(--transition-normal);
 }
+
 .hero-columns__item:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-lg);
 }
+
 .hero-columns__bg {
   /* Sirve para establecer estilos para la imagen de fondo de cada columna del hero, acomodar */
   width: 100%;
@@ -399,10 +502,12 @@ ul {
   object-fit: cover;
   transition: transform 0.5 ease;
 }
+
 .hero-columns__item:hover .hero-columns__bg {
   /* Sirve para hacer una transición suave al transformar la imagen de fondo de cada columna del hero al pasar el mouse por encima de cada columna del hero */
   transform: scale(1.05);
 }
+
 .hero-columns__overlay {
   /* Sirve para establecer estilos para la superposición de cada columna del hero */
   position: absolute;
@@ -410,26 +515,30 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Superposición semitransparente para mejorar la legibilidad del texto */
-  transition: background-color var(--transition-normal); /* Sirve para hacer una transición suave al cambiar el color de fondo de la superposición de cada columna del hero */
+  background-color: rgba(0,
+      0,
+      0,
+      0.3);
+  /* Superposición semitransparente para mejorar la legibilidad del texto */
+  transition: background-color var(--transition-normal);
+  /* Sirve para hacer una transición suave al cambiar el color de fondo de la superposición de cada columna del hero */
 }
+
 .hero-columns__item:hover .hero-columns__overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .hero-columns__content {
   /* Sirve para establecer estilos para el contenido de cada columna del hero */
   position: absolute;
   bottom: 2rem;
   left: 2rem;
   right: 2rem;
-  z-index: 2; /* Sirve para colocar el contenido de cada columna del hero por encima de la imagen de fondo y la superposición */
+  z-index: 2;
+  /* Sirve para colocar el contenido de cada columna del hero por encima de la imagen de fondo y la superposición */
   text-align: left;
 }
+
 .hero-columns__title {
   font-family: var(--font-display);
   font-size: 2.5rem;
@@ -437,8 +546,10 @@ ul {
   color: white;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad del título de cada columna del hero */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  /* Sombra para mejorar la legibilidad del título de cada columna del hero */
 }
+
 .hero-columns__button {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -448,12 +559,14 @@ ul {
   border-radius: 0;
   font-weight: 600;
   font-size: 0.9rem;
-  text-transform: capitalize; /* Sirve para transformar el texto del botón de cada columna del hero a mayúscula solo la primera letra de cada palabra */
+  text-transform: capitalize;
+  /* Sirve para transformar el texto del botón de cada columna del hero a mayúscula solo la primera letra de cada palabra */
   letter-spacing: 1px;
   transition:
     background-color var(--transition-normal),
     color var(--transition-normal);
 }
+
 .hero-columns__button:hover {
   background-color: var(--accent-color);
   color: white;
@@ -463,7 +576,8 @@ ul {
 .footer {
   background-color: #f5f5f5;
   color: var(--text-color);
-  padding: 3rem 0 1rem; /* 3rm a los lados, 0 arriba y 1rm hacia abajo */
+  padding: 3rem 0 1rem;
+  /* 3rm a los lados, 0 arriba y 1rm hacia abajo */
   border-top: 1px solid #e0e0e0;
 }
 
@@ -481,19 +595,23 @@ ul {
   color: var(--primary-color);
   text-transform: capitalize;
 }
+
 .footer__link {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .footer__link a {
   color: var(--text-color);
   font-size: 0.9rem;
   transition: color var(--transition-normal);
 }
+
 .footer__link a:hover {
   color: var(--secondary-color);
 }
+
 .footer__bottom {
   text-align: center;
   font-size: 0.8rem;
@@ -523,12 +641,15 @@ ul {
     visibility var(--transition-normal),
     background-color var(--transition-normal),
     transform var(--transition-normal);
-  z-index: 999; /* Sirve para colocar el botón de scroll to top por encima de otros elementos */
+  z-index: 999;
+  /* Sirve para colocar el botón de scroll to top por encima de otros elementos */
 }
+
 .scroll-top.show {
   opacity: 1;
   visibility: visible;
 }
+
 .scroll-top:hover {
   background-color: var(--primary-color);
 }
@@ -540,6 +661,7 @@ ul {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -570,7 +692,7 @@ ul {
   position: relative;
 }
 
-.filter__group + .filter__group {
+.filter__group+.filter__group {
   margin-left: 1rem;
 }
 
@@ -629,7 +751,7 @@ ul {
   z-index: 100;
 }
 
-.filter__dropdown.active + .filter__dropdown-menu {
+.filter__dropdown.active+.filter__dropdown-menu {
   display: flex;
 }
 
@@ -662,4 +784,132 @@ ul {
 
 .product__card.hide {
   display: none;
+}
+
+/* ========== 13. PÁGINA: TIENDAS ========== */
+
+.container--two-columns {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.stores-new {
+  padding: 2rem 0;
+  background-color: var(--bg-light);
+}
+
+.stores-new__title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.stores-new__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: stretch;
+}
+
+.stores-new__left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: 500px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.stores-new__left::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.store-info {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.store-info__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.store-info__header i {
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.store-info__title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.store-info__label {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.store-info__address {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.store-map {
+  display: flex;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.store-map iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+
+.stores-new__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.stores-new__left:hover .stores-new__image {
+  transform: scale(1.05);
 }

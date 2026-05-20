@@ -104,17 +104,17 @@ document.addEventListener("DOMContentLoaded", function () {
     productsArray.sort((a, b) => {
       const priceA = parseFloat(
         a.getAttribute("data-price") ||
-          a
-            .querySelector(".product__price")
-            .textContent.replace("S/ ", "")
-            .replace(",", ""),
+        a
+          .querySelector(".product__price")
+          .textContent.replace("S/ ", "")
+          .replace(",", ""),
       );
       const priceB = parseFloat(
         b.getAttribute("data-price") ||
-          b
-            .querySelector(".product__price")
-            .textContent.replace("S/ ", "")
-            .replace(",", ""),
+        b
+          .querySelector(".product__price")
+          .textContent.replace("S/ ", "")
+          .replace(",", ""),
       );
 
       if (sortValue === "price-low") {
