@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Filtrar por tallas
   const sizeCheckboxes = document.querySelectorAll(
-    '[data-filter="size"] input[type="checkbox"]',
+    '#size-menu input[type="checkbox"]',
   );
   sizeCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", applySizeFilter);
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Ordenar por precio
   const sortRadios = document.querySelectorAll(
-    '[data-filter="sort"] input[type="radio"]',
+    '#sort-menu input[type="radio"]',
   );
   sortRadios.forEach((radio) => {
     radio.addEventListener("change", function () {

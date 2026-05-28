@@ -2,7 +2,7 @@
 function throttle(fn, limit = 100) {
   // Esta función limita la frecuencia con la que se ejecuta una función, útil para optimizar eventos como el scroll.
   let inThrottle;
-  return (...args) => {
+  return function (...args) {
     if (!inThrottle) {
       fn.apply(this, args);
       inThrottle = true;

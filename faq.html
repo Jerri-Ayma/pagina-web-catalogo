@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Jervils - Pantalones Jean de alta calidad"
+      content="Resuelve tus dudas sobre tallas, precios, cambios, devoluciones y cuidado de los jeans Jervils."
     />
-    <title>Jervils - Pantalones Jean</title>
+    <title>Preguntas Frecuentes - Jervils</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Preguntas Frecuentes - Jervils" />
+    <meta property="og:description" content="Resuelve tus dudas sobre tallas, precios, cambios y cuidado de los jeans Jervils." />
+    <meta property="og:image" content="images/hero-background.jpg" />
+    <meta property="og:locale" content="es_PE" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,12 +39,12 @@
     <header class="header" id="header">
       <nav class="nav container" aria-label="Navegación principal">
         <div class="nav__logo">
-          <a href="#home">Jervils</a>
+          <a href="index.html">Jervils</a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Inicio</a>
+              <a href="index.html" class="nav__link">Inicio</a>
             </li>
             <li class="nav__item">
               <a href="catalogo.html" class="nav__link">Catálogo</a>
@@ -68,11 +78,11 @@
           <div class="faq__container">
             <!-- PREGUNTA 1 -->
             <div class="faq__item">
-              <button class="faq__question" aria-expanded="false">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-1">
                 <span>¿Qué tallas tienen disponibles?</span>
                 <i class="fas fa-chevron-down faq__icon"></i>
               </button>
-              <div class="faq__answer">
+              <div class="faq__answer" id="faq-answer-1" role="region">
                 <p>
                   Contamos con tallas desde la 28 hasta la 34, adaptándose a
                   diferentes tipos de cuerpo. Te recomendamos visitar nuestra
@@ -85,11 +95,11 @@
 
             <!-- PREGUNTA 2 -->
             <div class="faq__item">
-              <button class="faq__question" aria-expanded="false">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-2">
                 <span>¿Dónde puedo ver los jeans en persona?</span>
                 <i class="fas fa-chevron-down faq__icon"></i>
               </button>
-              <div class="faq__answer">
+              <div class="faq__answer" id="faq-answer-2" role="region">
                 <p>
                   Nuestra tienda está ubicada en
                   <strong
@@ -104,11 +114,11 @@
 
             <!-- PREGUNTA 3 -->
             <div class="faq__item">
-              <button class="faq__question" aria-expanded="false">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-3">
                 <span>¿Cuál es el precio de los jeans?</span>
                 <i class="fas fa-chevron-down faq__icon"></i>
               </button>
-              <div class="faq__answer">
+              <div class="faq__answer" id="faq-answer-3" role="region">
                 <p>
                   Nuestros jeans tienen precios que van desde S/ 150.00 hasta S/
                   160.00, dependiendo del modelo y características específicas.
@@ -122,11 +132,11 @@
 
             <!-- PREGUNTA 4 -->
             <div class="faq__item">
-              <button class="faq__question" aria-expanded="false">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-4">
                 <span>¿Hacen cambios o devoluciones?</span>
                 <i class="fas fa-chevron-down faq__icon"></i>
               </button>
-              <div class="faq__answer">
+              <div class="faq__answer" id="faq-answer-4" role="region">
                 <p>
                   Sí, aceptamos cambios dentro de los
                   <strong>7 días posteriores a la compra</strong>, siempre que
@@ -141,11 +151,11 @@
 
             <!-- PREGUNTA 5 -->
             <div class="faq__item">
-              <button class="faq__question" aria-expanded="false">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-5">
                 <span>¿Cómo debo cuidar mis jeans Jervils?</span>
                 <i class="fas fa-chevron-down faq__icon"></i>
               </button>
-              <div class="faq__answer">
+              <div class="faq__answer" id="faq-answer-5" role="region">
                 <p>
                   Para mantener tus jeans en perfecto estado, te recomendamos:
                 </p>
@@ -194,7 +204,7 @@
           <nav class="footer__section">
             <h2 class="footer__title">Centro de ayuda</h2>
             <ul class="footer__link">
-              <li><a href="tiendas.html">Preguntas Frecuentes</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
             </ul>
           </nav>
 
@@ -210,7 +220,7 @@
             <h2 class="footer__title">Sobre Jervils</h2>
             <ul class="footer__link">
               <li><a href="about.html">Quienes somos</a></li>
-              <li><a href="Tiendas.html">Nuestras Tiendas</a></li>
+              <li><a href="tiendas.html">Nuestras Tiendas</a></li>
             </ul>
           </nav>
         </div>
@@ -223,7 +233,7 @@
     </footer>
 
     <a
-      href="#home"
+      href="#main"
       class="scroll-top"
       id="scroll-top"
       aria-label="Volver al inicio"

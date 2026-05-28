@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Jervils - Pantalones Jean de alta calidad"
+      content="Explora todos los modelos de jeans Jervils para mujer, hombre y unisex. Filtra por talla y ordena por precio."
     />
-    <title>Jervils - Pantalones Jean</title>
+    <title>Catálogo - Jervils Jeans</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Catálogo - Jervils Jeans" />
+    <meta property="og:description" content="Explora todos los modelos de jeans Jervils para mujer, hombre y unisex." />
+    <meta property="og:image" content="images/catalogo.jpg" />
+    <meta property="og:locale" content="es_PE" />
 
     <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,12 +43,12 @@
     <header class="header" id="header">
       <nav class="nav container" aria-label="Navegación principal">
         <div class="nav__logo">
-          <a href="#home">Jervils</a>
+          <a href="index.html">Jervils</a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Inicio</a>
+              <a href="index.html" class="nav__link">Inicio</a>
             </li>
             <li class="nav__item">
               <a href="catalogo.html" class="nav__link">Catálogo</a>
@@ -85,6 +95,7 @@
 
             <!-- Filtro de Talla -->
             <fieldset class="filter__group">
+              <legend class="visually-hidden">Filtrar por talla</legend>
               <button
                 class="filter__dropdown"
                 data-filter="size"
@@ -109,6 +120,7 @@
 
             <!-- Filtro de Ordenar -->
             <fieldset class="filter__group filter__sort">
+              <legend class="visually-hidden">Ordenar productos</legend>
               <button
                 class="filter__dropdown"
                 data-filter="sort"
@@ -314,7 +326,7 @@
           <nav class="footer__section">
             <h2 class="footer__title">Centro de ayuda</h2>
             <ul class="footer__link">
-              <li><a href="tiendas.html">Preguntas Frecuentes</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
             </ul>
           </nav>
 
@@ -332,7 +344,7 @@
             <h2 class="footer__title">Sobre Jervils</h2>
             <ul class="footer__link">
               <li><a href="about.html">Quienes somos</a></li>
-              <li><a href="Tiendas.html">Nuestras Tiendas</a></li>
+              <li><a href="tiendas.html">Nuestras Tiendas</a></li>
             </ul>
           </nav>
         </div>
@@ -347,7 +359,7 @@
 
     <!-- Scroll to top button -->
     <a
-      href="#home"
+      href="#main"
       class="scroll-top"
       id="scroll-top"
       aria-label="Volver al inicio"
