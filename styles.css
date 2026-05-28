@@ -1026,6 +1026,17 @@ ul {
     --h2-size: 2rem;
   }
 
+  /* Evita scroll horizontal causado por el menú posicionado en right: -100% */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Asegura que el scroll-top quede por encima del header (y debajo del menú abierto) */
+  .scroll-top {
+    z-index: 9999;
+  }
+
   /* Nav */
   .nav {
     display: flex;
