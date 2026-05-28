@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Habilitar accordion solo cuando JS esta disponible (progressive enhancement)
     document.body.classList.add('js-enabled');
 
     const faqQuestions = document.querySelectorAll('.faq__question');
 
     faqQuestions.forEach(question => {
-        question.addEventListener('click', function() {
+        question.addEventListener('click', function () {
             const faqItem = this.parentElement;
             const answer = faqItem.querySelector('.faq__answer');
             const icon = this.querySelector('.faq__icon');
